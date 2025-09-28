@@ -3,8 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <title>Float Layout</title>
+        <style>
+            .container{
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+
+            .block{
+                width: 100px;
+                height: 50px;
+                background: #aaa;
+            }
+
+            .left{float: left;}
+            .right{float: right;}
+        </style>
     </head>
     <body>
-        
+        <div class="container">
+            <div class=" block left">Hi</div>
+            <div class="block right">Bye</div>
+        </div>
+
+        <div class="container">
+            <div class="block left">Hi</div>
+            <div class="block right">Bye</div>
+             <div class="block right">Bye</div>
+              <div class="block right">Bye</div>
+        </div>
+
+        <div class="container">
+            <div class="block left">Hi</div>
+            <div class="block left">Hi</div>
+            <div class="block right">Bye</div>
+            <div class="block right">Bye</div>
+        </div>
+
+        <div class="container">
+            <div class="block right">Bye</div>
+            <div class="block right">Bye</div>
+            <div class="block right" style="clear: right;">Bye</div>
+        </div>
     </body>
 </html>
